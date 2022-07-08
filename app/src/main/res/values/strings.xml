@@ -3,4 +3,12 @@
     <string name="textView_login_text">Login</string>
     <string name="button_admin">Admin</string>
     <string name="button_user">user</string>
+
+    <string name="card_one_img_desc">LMS Logo</string>
+    <string name="total_users_text">Total Users:</string>
+    <string name="total_users_count">0</string>
+    <string name="total_books_text">Total Books:</string>
+    <string name="total_books_count">0</string>
+    <string name="books_issued_text">Books Issued:</string>
+    <string name="books_issued_count">0</string>
 </resources>
