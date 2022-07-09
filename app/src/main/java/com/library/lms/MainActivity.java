@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void adminLogin(View view) {
-        Log.d(LOG_TAG, "Admin Login");
+        Log.i(LOG_TAG, "Admin Login");
 
         Intent intent = new Intent(this, AdminActivity.class);
 
@@ -26,6 +26,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void userLogin(View view) {
-        Log.d(LOG_TAG, "User Login");
+        Log.i(LOG_TAG, "User Login");
     }
 }
