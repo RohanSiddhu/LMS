@@ -3,6 +3,7 @@ package com.library.lms;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -37,6 +38,10 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i(LOG_TAG, "Books Clicked");
+
+                Intent intent = new Intent(getApplicationContext(), BooksActivity.class);
+
+                startActivity(intent);
             }
         });
 
@@ -44,6 +49,10 @@ public class AdminActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.i(LOG_TAG, "Users Clicked");
+
+                Intent intent = new Intent(getApplicationContext(), UsersOptionActivity.class);
+
+                startActivity(intent);
             }
         });
 
