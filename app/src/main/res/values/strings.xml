@@ -1,14 +1,19 @@
 <resources>
     <string name="app_name">LMS</string>
     <string name="textView_login_text">Login</string>
-    <string name="button_admin">Admin</string>
-    <string name="button_user">user</string>
+    <string name="button_loginAdmin">Admin</string>
+    <string name="button_loginUser">user</string>
 
-    <string name="card_one_img_desc">LMS Logo</string>
-    <string name="total_users_text">Total Users:</string>
-    <string name="total_users_count">0</string>
-    <string name="total_books_text">Total Books:</string>
-    <string name="total_books_count">0</string>
-    <string name="books_issued_text">Books Issued:</string>
-    <string name="books_issued_count">0</string>
+    <string name="info_img_desc">LMS Logo</string>
+    <string name="total_users">Total Users:</string>
+    <string name="total_userCount">0</string>
+    <string name="total_books">Total Books:</string>
+    <string name="total_bookCount">0</string>
+    <string name="books_issued">Books Issued:</string>
+    <string name="books_issueCount">0</string>
+
+    <string name="button_books">Books</string>
+    <string name="button_users">Users</string>
+    <string name="button_history">History</string>
+    <string name="button_notifications">Notifications</string>
 </resources>

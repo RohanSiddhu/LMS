@@ -12,7 +12,6 @@ import android.widget.GridView;
 import java.util.ArrayList;
 
 public class AdminActivity extends AppCompatActivity {
-    GridView gridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,17 +20,5 @@ public class AdminActivity extends AppCompatActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        gridView = findViewById(R.id.gridView);
-
-        ArrayList<GridData> list = new ArrayList<>();
-
-        list.add(new GridData(R.drawable.ic_launcher_foreground, "Books"));
-        list.add(new GridData(R.drawable.ic_launcher_foreground, "Users"));
-        list.add(new GridData(R.drawable.ic_launcher_foreground, "History"));
-        list.add(new GridData(R.drawable.ic_launcher_foreground, "Notifications"));
-
-        GridAdapter adapter = new GridAdapter(this, list);
-        gridView.setAdapter(adapter);
     }
 }
