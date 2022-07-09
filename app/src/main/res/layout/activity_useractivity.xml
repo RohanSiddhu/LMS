@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/projectbg2"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/projectbg3"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:gravity="center"
+        android:text="User-Home"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="347dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/btnsearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#5461B3AA"
+            android:drawableLeft="@drawable/ic_baseline_search_24"
+            android:text="search"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btnsee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#5461B3AA"
+            android:drawableLeft="@drawable/ic_baseline_menu_book_24"
+            android:text="see my books"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btnreturn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#5461B3AA"
+            android:drawableLeft="@drawable/ic_baseline_library_books_24"
+            android:text="Books returned"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+        <Button
+            android:id="@+id/btnrequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#5461B3AA"
+            android:drawableLeft="@drawable/ic_baseline_mail_24"
+            android:text="Request Books"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:backgroundTint="#5461B3AA"
+            android:drawableLeft="@drawable/ic_baseline_keyboard_return_24"
+            android:text="log out"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
