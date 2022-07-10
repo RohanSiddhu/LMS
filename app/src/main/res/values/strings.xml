@@ -16,4 +16,6 @@
     <string name="button_users">Users</string>
     <string name="button_history">History</string>
     <string name="button_notifications">Notifications</string>
+
+    <string name="float_button_imgDesc">Add</string>
 </resources>
