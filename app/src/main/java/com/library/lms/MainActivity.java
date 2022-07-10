@@ -34,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         this.finish();
     }
+    //mycode
+    public void action3(View view) {
+        Intent i = new Intent(getApplicationContext(),Login.class);
+        startActivity(i);
+    }
+    //my code end
 
     public void userLogin(View view) {
         Log.i(LOG_TAG, "User Login");

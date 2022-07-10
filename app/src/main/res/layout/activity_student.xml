@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage"
+    tools:context=".student">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="LMS"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/loginText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="login as"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/student"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/loginText"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:id="@+id/emailNO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/student"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="15dp" />
+    <EditText
+        android:id="@+id/passNO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailNO"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        android:textAlignment="center"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/logBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passNO"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:text="login" />
+
+</RelativeLayout>

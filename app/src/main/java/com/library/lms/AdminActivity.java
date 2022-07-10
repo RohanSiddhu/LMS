@@ -48,9 +48,10 @@ public class AdminActivity extends AppCompatActivity {
         buttonUsers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.i(LOG_TAG, "Users Clicked");
+
 
                 Intent intent = new Intent(getApplicationContext(), UsersOptionActivity.class);
+
 
                 startActivity(intent);
             }
