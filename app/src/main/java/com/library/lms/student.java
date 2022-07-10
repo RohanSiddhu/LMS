@@ -2,6 +2,7 @@ package com.library.lms;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,6 +43,8 @@ public class student extends AppCompatActivity {
                     if(check == true){
                         Toast.makeText(student.this, "Welcome", Toast.LENGTH_SHORT).show();
                         // write intent function to ho to student page
+                        Intent i = new Intent(getApplicationContext(), Useractivity.class);
+                        startActivity(i);
                     }
                     else
                         Toast.makeText(student.this, "Invalid credential", Toast.LENGTH_SHORT).show();

@@ -9,6 +9,10 @@
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_student.xml" value="0.12273550724637682" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_teacher.xml" value="0.2" />
+        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_user_request.xml" value="0.13722826086956522" />
+        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_user_return.xml" value="0.13722826086956522" />
+        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_user_see_books.xml" value="0.13722826086956522" />
+        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_useractivity.xml" value="0.13722826086956522" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_users_option.xml" value="0.2" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/del_dialog.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.2132701421800948" />

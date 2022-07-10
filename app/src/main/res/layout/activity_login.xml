@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bgimage"
-    tools:context=".Login">
-
+    tools:context=".MainActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,6 +48,14 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="60dp"
         android:layout_marginTop="30dp"/>
-
-
+    <Button
+        android:id="@+id/btn3"
+        android:onClick="action2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/btn2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="30dp"/>
 </RelativeLayout>

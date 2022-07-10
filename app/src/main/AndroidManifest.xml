@@ -22,9 +22,17 @@
         <activity
             android:name=".student"
             android:exported="false" />
-        <activity
-            android:name=".Login"
-            android:exported="false" />
+        <activity android:name=".Useractivity"
+            android:exported="false"/>
+        <activity android:name=".UserActivityRequest"
+            android:exported="false"/>
+        <activity android:name=".UserActivityReturn"
+            android:exported="false"/>
+        <activity android:name=".UserActivitySearch"
+            android:exported="false"/>
+        <activity android:name=".UserActivitySeeBooks"
+            android:exported="false"/>
+
         <activity
             android:name=".UsersOptionActivity"
             android:exported="false"
