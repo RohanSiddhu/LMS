@@ -76,6 +76,15 @@ public class DBhelper  extends SQLiteOpenHelper {
         else
             return false;
     }
-
+    public int getUserCount(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor c= db.rawQuery("select * from users",null);
+        if(c.getCount()>0){
+            return c.getCount();
+        }
+        else{
+            return 0;
+        }
+    }
 }
 

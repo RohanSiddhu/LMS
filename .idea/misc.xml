@@ -3,16 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/KAMAL GOUD/student_project/LMS/app/src/main/res/layout/activity_admin.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/KAMAL GOUD/student_project/LMS/app/src/main/res/layout/activity_books.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/KAMAL GOUD/student_project/LMS/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/KAMAL GOUD/student_project/LMS/app/src/main/res/layout/activity_student.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/KAMAL GOUD/student_project/LMS/app/src/main/res/layout/del_dialog.xml" value="0.25416666666666665" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_admin.xml" value="0.12273550724637682" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_login.xml" value="0.12273550724637682" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_sign_up.xml" value="0.2" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_student.xml" value="0.12273550724637682" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_teacher.xml" value="0.2" />
-        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_user_request.xml" value="0.13722826086956522" />
-        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_user_return.xml" value="0.13722826086956522" />
-        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_user_see_books.xml" value="0.13722826086956522" />
-        <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_useractivity.xml" value="0.13722826086956522" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/activity_users_option.xml" value="0.2" />
         <entry key="..\:/lms/LMS/app/src/main/res/layout/del_dialog.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.2132701421800948" />
