@@ -14,8 +14,16 @@ public class Books {
     public String title;
     @ColumnInfo
     public String author;
-    @ColumnInfo(name = "total_count")
-    public int totalCount;
-    @ColumnInfo(name = "available_count")
-    public int availableCount;
+    @ColumnInfo(name = "total")
+    public int total;
+    @ColumnInfo(name = "available")
+    public int available;
+
+    public Books(long isbn, String title, String author, int total, int available) {
+        this.isbn = isbn;
+        this.title = title;
+        this.author = author;
+        this.total = total;
+        this.available = available;
+    }
 }

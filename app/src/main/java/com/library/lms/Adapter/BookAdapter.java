@@ -10,15 +10,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import com.library.lms.DB.Books;
 import com.library.lms.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class BookAdapter extends ArrayAdapter<String> {
+public class BookAdapter extends ArrayAdapter<Books> {
     Context context;
-    ArrayList<String> list;
+    List<Books> list;
 
-    public BookAdapter(Context context, ArrayList<String> list) {
+    public BookAdapter(Context context, List<Books> list) {
         super(context, R.layout.book_list_layout, R.id.listView_books, list);
         this.context = context;
         this.list = list;
@@ -34,7 +36,7 @@ public class BookAdapter extends ArrayAdapter<String> {
         }
 
         TextView bookName = currentView.findViewById(R.id.book_name);
-        bookName.setText(list.get(position));
+        bookName.setText(list.get(position).title);
 
         return currentView;
     }
