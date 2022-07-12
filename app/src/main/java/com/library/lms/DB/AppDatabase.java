@@ -14,7 +14,7 @@ public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase dataBase;
 
     public static AppDatabase getInstance(Context context){
-        if (null== dataBase){
+        if (dataBase == null){
             dataBase= buildDatabaseInstance(context);
         }
         return dataBase;
@@ -22,6 +22,6 @@ public abstract class AppDatabase extends RoomDatabase {
 
     private static AppDatabase buildDatabaseInstance(Context context) {
         return Room.databaseBuilder(context, AppDatabase.class, "lms.db")
-                .allowMainThreadQueries().build();
+                .allowMainThreadQueries().enableMultiInstanceInvalidation().build();
     }
 }

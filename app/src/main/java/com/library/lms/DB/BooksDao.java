@@ -13,6 +13,12 @@ public interface BooksDao {
     @Query("SELECT * FROM books")
     List<Books> getAll();
 
+    @Query("SELECT SUM(total) AS total FROM books")
+    int getSumTotal();
+
+    @Query("SELECT SUM(available) AS available FROM books")
+    int getSumAvailable();
+
     @Insert
     void insertAll(Books... books);
 

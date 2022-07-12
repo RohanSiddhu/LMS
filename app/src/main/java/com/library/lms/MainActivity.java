@@ -1,18 +1,16 @@
 package com.library.lms;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
 import com.library.lms.DB.AppDatabase;
 
 public class MainActivity extends AppCompatActivity {
-    public AppDatabase dbRoom;
+    public AppDatabase lmsDb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         SQLiteDatabase g = db.getReadableDatabase();
 
         // Room Database.
-        dbRoom = AppDatabase.getInstance(this);
+        lmsDb = AppDatabase.getInstance(this);
     }
 
     public void action(View view) {
