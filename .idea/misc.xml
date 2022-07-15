@@ -18,7 +18,11 @@
         <entry key="..\:/lms/LMS/app/src/main/res/layout/del_dialog.xml" value="0.20416666666666666" />
         <entry key="app/src/main/res/layout/activity_admin.xml" value="0.2132701421800948" />
         <entry key="app/src/main/res/layout/activity_books.xml" value="0.1272644927536232" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.1272644927536232" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_student.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_teacher.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_useractivity.xml" value="0.1272644927536232" />
         <entry key="app/src/main/res/layout/grid_layout.xml" value="0.1272644927536232" />
       </map>
     </option>

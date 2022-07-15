@@ -1,16 +1,19 @@
 <resources>
     <string name="app_name">LMS</string>
-    <string name="textView_login_text">Login</string>
-    <string name="button_loginAdmin">Admin</string>
-    <string name="button_loginUser">user</string>
+    <string name="loginText">Login</string>
+    <string name="loginAsText">Login as</string>
+    <string name="loginAdmin">Admin</string>
+    <string name="loginUser">User</string>
+    <string name="loginTeacher">Teacher</string>
+    <string name="loginStudent">Student</string>
+    <string name="empNoHint">Employee No.</string>
+    <string name="passwordHint">Password</string>
+    <string name="emailHint">Email Id</string>
 
     <string name="info_img_desc">LMS Logo</string>
     <string name="total_users">Total Users:</string>
-    <string name="total_userCount">0</string>
     <string name="total_books">Total Books:</string>
-    <string name="total_bookCount">0</string>
     <string name="books_issued">Books Issued:</string>
-    <string name="books_issueCount">0</string>
 
     <string name="button_books">Books</string>
     <string name="button_users">Users</string>

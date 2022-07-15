@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,73 +10,78 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="LMS"
-        android:textSize="50dp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
+        android:layout_marginTop="110dp"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:layout_marginTop="110dp"/>
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/logintext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="login as"
-        android:textSize="25dp"
-        android:textAlignment="center"
         android:layout_marginTop="200dp"
+        android:text="@string/loginAsText"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        />
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/teacher"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Teacher"
-        android:textSize="40dp"
-        android:textAlignment="center"
         android:layout_below="@+id/logintext"
+        android:text="@string/loginTeacher"
+        android:textAlignment="center"
         android:textColor="@color/white"
-        android:textStyle="italic"/>
+        android:textSize="40sp"
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/empNO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/teacher"
-        android:layout_marginTop="29dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
         android:layout_marginRight="20dp"
-        android:hint="Employee no."
-        android:padding="10dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
-        android:textAlignment="center"
+        android:autofillHints=""
+        android:hint="@string/empNoHint"
         android:inputType="number"
-        />
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        tools:ignore="TextContrastCheck" />
+
     <EditText
         android:id="@+id/passnO"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/empNO"
-        android:layout_marginTop="29dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="29dp"
         android:layout_marginRight="20dp"
-        android:hint="Password"
-        android:padding="10dp"
-        android:textColorHint="@color/white"
-        android:textSize="15dp"
-        android:textAlignment="center"
+        android:autofillHints=""
+        android:hint="@string/passwordHint"
         android:inputType="textPassword"
-        />
-    <Button
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        tools:ignore="TextContrastCheck" />
 
+    <Button
         android:id="@+id/loginTeacher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="login"
         android:layout_below="@+id/passnO"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="30dp"/>
-
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/loginText" />
 </RelativeLayout>
