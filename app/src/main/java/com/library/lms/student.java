@@ -43,7 +43,7 @@ public class student extends AppCompatActivity {
                     if(check == true){
                         Toast.makeText(student.this, "Welcome", Toast.LENGTH_SHORT).show();
                         // write intent function to ho to student page
-                        Intent i = new Intent(getApplicationContext(), Useractivity.class);
+                        Intent i = new Intent(getApplicationContext(), UserActivity.class);
                         startActivity(i);
                     }
                     else

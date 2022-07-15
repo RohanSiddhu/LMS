@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class Useractivity extends AppCompatActivity {
+public class UserActivity extends AppCompatActivity {
     Button bsrch;
     Button bsee;
     Button bret;
@@ -19,15 +19,15 @@ public class Useractivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.item,menu);
+        getMenuInflater().inflate(R.menu.menu_home,menu);
         return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id=item.getItemId();
-        if(id==R.id.menuclose){
-            Useractivity.this.finish();
+        int id = item.getItemId();
+        if (id == R.id.menu_close) {
+            UserActivity.this.finish();
         }
         return super.onOptionsItemSelected(item);
     }

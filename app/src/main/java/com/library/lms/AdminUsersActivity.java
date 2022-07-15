@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class UsersOptionActivity extends AppCompatActivity {
+public class AdminUsersActivity extends AppCompatActivity {
     Button add,del,view;
     DBhelper g;
 
@@ -31,7 +31,7 @@ public class UsersOptionActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Cursor t = g.getInfo();
                 if(t.getCount()==0){
-                    Toast.makeText(UsersOptionActivity.this, "No data", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AdminUsersActivity.this, "No data", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     StringBuffer buffer = new StringBuffer();
@@ -41,7 +41,7 @@ public class UsersOptionActivity extends AppCompatActivity {
                         buffer.append("Email "+t.getString(3)+"\n\n");
 
                     }
-                    AlertDialog.Builder builder = new AlertDialog.Builder(UsersOptionActivity.this);
+                    AlertDialog.Builder builder = new AlertDialog.Builder(AdminUsersActivity.this);
                     builder.setCancelable(true);
                     builder.setTitle("Sign up user");
                     builder.setMessage(buffer.toString());
@@ -60,7 +60,7 @@ public class UsersOptionActivity extends AppCompatActivity {
 
 
     public void show_del_dialog(View view) {
-        final AlertDialog.Builder  alert = new AlertDialog.Builder(UsersOptionActivity.this);
+        final AlertDialog.Builder  alert = new AlertDialog.Builder(AdminUsersActivity.this);
         View mView = getLayoutInflater().inflate(R.layout.del_dialog,null);
 
         final EditText  inputEmail = (EditText)mView.findViewById(R.id.txt_input);
@@ -87,9 +87,9 @@ public class UsersOptionActivity extends AppCompatActivity {
                 alertdialog.dismiss();
                 boolean i = g.delete_data(getText);
                 if(i== true)
-                    Toast.makeText(UsersOptionActivity.this, "Deleted Successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AdminUsersActivity.this, "Deleted Successfully", Toast.LENGTH_SHORT).show();
                 else
-                    Toast.makeText(UsersOptionActivity.this, "user not found", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AdminUsersActivity.this, "user not found", Toast.LENGTH_SHORT).show();
             }
         });
         alertdialog.show();

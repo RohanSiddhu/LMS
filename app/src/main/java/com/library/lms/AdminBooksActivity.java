@@ -1,14 +1,13 @@
 package com.library.lms;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.room.Room;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.widget.ArrayAdapter;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import com.library.lms.Adapter.*;
@@ -17,8 +16,10 @@ import com.library.lms.DB.Books;
 import com.library.lms.DB.BooksDao;
 
 
-public class BooksActivity extends AppCompatActivity {
+public class AdminBooksActivity extends AppCompatActivity {
     ListView listView;
+    ImageView searchButton;
+
     AppDatabase dbRoom;
     BooksDao booksDao;
 
@@ -28,6 +29,7 @@ public class BooksActivity extends AppCompatActivity {
         setContentView(R.layout.activity_books);
 
         listView = findViewById(R.id.listView_books);
+        searchButton = findViewById(R.id.button_search);
 
         dbRoom = AppDatabase.getInstance(this);
 
@@ -44,5 +46,12 @@ public class BooksActivity extends AppCompatActivity {
 
         BookAdapter adapter = new BookAdapter(this, books);
         listView.setAdapter(adapter);
+
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Search Books", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

@@ -21,4 +21,5 @@
     <string name="button_notifications">Notifications</string>
 
     <string name="float_button_imgDesc">Add</string>
+    <string name="button_search">Search</string>
 </resources>

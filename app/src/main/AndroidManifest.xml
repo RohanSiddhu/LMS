@@ -22,7 +22,7 @@
         <activity
             android:name=".student"
             android:exported="false" />
-        <activity android:name=".Useractivity"
+        <activity android:name=".UserActivity"
             android:exported="false"/>
         <activity android:name=".UserActivityRequest"
             android:exported="false"/>
@@ -34,7 +34,7 @@
             android:exported="false"/>
 
         <activity
-            android:name=".UsersOptionActivity"
+            android:name=".AdminUsersActivity"
             android:exported="false"
             android:label="Users"
             android:parentActivityName=".AdminActivity">
@@ -43,7 +43,7 @@
                 android:value="com.library.lms.AdminActivity" />
         </activity>
         <activity
-            android:name=".BooksActivity"
+            android:name=".AdminBooksActivity"
             android:exported="false"
             android:label="Books"
             android:parentActivityName=".AdminActivity">
