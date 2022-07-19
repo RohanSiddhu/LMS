@@ -45,16 +45,16 @@
 
     <Button
         android:id="@+id/View_btn"
-        android:backgroundTint="@color/design_default_color_primary"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_below="@+id/del_btn"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="10dp"
+        android:backgroundTint="@color/design_default_color_primary"
         android:text="View"
-        android:textSize="25dp"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:textSize="25dp" />
 
 
 </RelativeLayout>

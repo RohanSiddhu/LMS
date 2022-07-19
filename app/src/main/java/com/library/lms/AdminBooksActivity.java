@@ -2,6 +2,7 @@ package com.library.lms;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -10,6 +11,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.library.lms.Adapter.*;
 import com.library.lms.DB.AppDatabase;
 import com.library.lms.DB.Books;
@@ -19,6 +21,7 @@ import com.library.lms.DB.BooksDao;
 public class AdminBooksActivity extends AppCompatActivity {
     ListView listView;
     ImageView searchButton;
+    FloatingActionButton addButton;
 
     AppDatabase dbRoom;
     BooksDao booksDao;
@@ -28,11 +31,13 @@ public class AdminBooksActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_books);
 
+        // Get view reference
         listView = findViewById(R.id.listView_books);
         searchButton = findViewById(R.id.button_search);
+        addButton = findViewById(R.id.floatingButton_books);
 
+        // Init Database
         dbRoom = AppDatabase.getInstance(this);
-
         booksDao = dbRoom.booksDao();
         List<Books> books = booksDao.getAll();
         if (books.size() == 0) {
@@ -44,14 +49,26 @@ public class AdminBooksActivity extends AppCompatActivity {
             books = booksDao.getAll();
         }
 
+        // Init ListView
         BookAdapter adapter = new BookAdapter(this, books);
         listView.setAdapter(adapter);
 
+        setListeners();
+    }
+
+    private void setListeners() {
+        // Search Button
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getApplicationContext(), "Search Books", Toast.LENGTH_SHORT).show();
             }
+        });
+
+        // Add button
+        addButton.setOnClickListener(view -> {
+            Intent intent = new Intent(AdminBooksActivity.this, AdminAddBookActivity.class);
+            startActivity(intent);
         });
     }
 }
