@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">LMS</string>
+    <string name="sign_in">Sign In</string>
     <string name="loginText">Login</string>
     <string name="loginAsText">Login as</string>
     <string name="loginAdmin">Admin</string>
@@ -15,6 +16,8 @@
     <string name="total_books">Total Books:</string>
     <string name="books_issued">Books Issued:</string>
 
+    <string name="button_user_login">User</string>
+    <string name="button_admin_login">Admin</string>
     <string name="button_books">Books</string>
     <string name="button_users">Users</string>
     <string name="button_history">History</string>
@@ -22,4 +25,7 @@
 
     <string name="float_button_imgDesc">Add</string>
     <string name="button_search">Search</string>
+
+    <string name="menu_close">Close App</string>
+    <string name="menu_logout">Logout</string>
 </resources>

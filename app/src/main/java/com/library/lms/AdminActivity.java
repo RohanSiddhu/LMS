@@ -26,9 +26,6 @@ public class AdminActivity extends AppCompatActivity {
     Button buttonUsers;
     Button buttonHistory;
     Button buttonNotification;
-    TextView userCount;
-    TextView bookCount;
-    TextView issuedCount;
 
     // Database
     DBhelper dBhelper;
@@ -54,12 +51,8 @@ public class AdminActivity extends AppCompatActivity {
         buttonUsers = findViewById(R.id.button_users);
         buttonHistory = findViewById(R.id.button_history);
         buttonNotification = findViewById(R.id.button_notifications);
-        userCount = findViewById(R.id.total_userCount);
-        bookCount = findViewById(R.id.total_bookCount);
-        issuedCount = findViewById(R.id.books_issueCount);
 
         setButtonListener();
-        updateInfo();
     }
 
     @Override
@@ -80,20 +73,6 @@ public class AdminActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-
-    public void updateInfo() {
-        // Total Users
-        int totalUsers = dBhelper.getUserCount();
-        userCount.setText(String.format(Locale.ENGLISH, "%d", totalUsers));
-
-        // Total Books
-        int totalBooks = booksDao.getSumTotal();
-        bookCount.setText(String.format(Locale.ENGLISH, "%d", totalBooks));
-
-        // Total Books Issued
-        int booksIssued = totalBooks - booksDao.getSumAvailable();
-        issuedCount.setText(String.format(Locale.ENGLISH, "%d", booksIssued));
     }
 
     private void setButtonListener() {

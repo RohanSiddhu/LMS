@@ -6,26 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".AdminActivity">
-
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbarHome"
-        android:layout_width="match_parent"
-            android:drawableStart="@drawable/ic_baseline_people_alt_24"
-        android:layout_height="wrap_content">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarHome"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize"
-            android:theme="?attr/actionBarTheme"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:title="Admin" />
-    </com.google.android.material.appbar.AppBarLayout>
+    tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/info_img"
@@ -36,72 +17,95 @@
         android:src="@drawable/lms_logo"
         tools:ignore="ImageContrastCheck" />
 
+    <!-- hello -->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/options_row1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_margin="0dp"
         android:layout_weight="2"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
+
 
         <Button
-            android:id="@+id/button_books"
+            android:id="@+id/btnsearch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="48dp"
+            android:drawableStart="@drawable/ic_baseline_search_24"
             android:minHeight="64dp"
-            android:drawableStart="@drawable/ic_baseline_library_books_24"
-            android:text="@string/button_books"
+            android:text="search"
+            android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/button_users"
+            app:layout_constraintBottom_toTopOf="@+id/btnsee"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button_users"
+            android:id="@+id/btnsee"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="48dp"
-            android:drawableStart="@drawable/ic_baseline_people_alt_24"
+            android:drawableStart="@drawable/ic_baseline_menu_book_24"
             android:minHeight="64dp"
-            android:text="@string/button_users"
+            android:text="see my books"
+            android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/button_history"
+            app:layout_constraintBottom_toTopOf="@+id/btnreturn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_books" />
+            app:layout_constraintTop_toBottomOf="@+id/btnsearch" />
 
         <Button
-            android:id="@+id/button_history"
+            android:id="@+id/btnreturn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="48dp"
-            android:drawableStart="@drawable/ic_baseline_history_24"
+            android:drawableStart="@drawable/ic_baseline_library_books_24"
             android:minHeight="64dp"
-            android:text="@string/button_history"
+            android:text="Books returned"
+            android:textColor="@color/black"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/button_notifications"
+            app:layout_constraintBottom_toTopOf="@+id/btnrequest"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_users" />
+            app:layout_constraintTop_toBottomOf="@+id/btnsee" />
 
         <Button
-            android:id="@+id/button_notifications"
+            android:id="@+id/btnrequest"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="48dp"
-            android:drawableStart="@drawable/ic_baseline_notifications_24"
+            android:drawableStart="@drawable/ic_baseline_mail_24"
             android:minHeight="64dp"
-            android:text="@string/button_notifications"
+            android:text="Request Books"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnlogout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnreturn" />
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="48dp"
+            android:drawableStart="@drawable/ic_baseline_keyboard_return_24"
+            android:minHeight="64dp"
+            android:text="log out"
+            android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button_history" />
+            app:layout_constraintTop_toBottomOf="@+id/btnrequest" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

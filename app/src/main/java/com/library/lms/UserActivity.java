@@ -35,7 +35,7 @@ public class UserActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_useractivity);
+        setContentView(R.layout.activity_user);
         bsrch=findViewById(R.id.btnsearch);
         bsee=findViewById(R.id.btnsee);
         bret=findViewById(R.id.btnreturn);

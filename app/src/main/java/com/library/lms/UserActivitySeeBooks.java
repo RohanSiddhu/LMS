@@ -16,7 +16,7 @@ public class UserActivitySeeBooks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_user_see_books);
+        setContentView(R.layout.activity_user_book_see);
         listView=findViewById(R.id.list);
         ArrayList<String> arrayList=new ArrayList<>();
         arrayList.add("1. Computer Fundamentals and Programming in C \n");

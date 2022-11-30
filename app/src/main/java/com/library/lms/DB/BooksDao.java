@@ -13,6 +13,9 @@ public interface BooksDao {
     @Query("SELECT * FROM books")
     List<Books> getAll();
 
+    @Query("SELECT SUM(isbn) AS total FROM books WHERE isbn = (:isbn)")
+    int present(long isbn);
+
     @Query("SELECT SUM(total) AS total FROM books")
     int getSumTotal();
 
